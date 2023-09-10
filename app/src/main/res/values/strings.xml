@@ -1,3 +1,15 @@
 <resources>
-    <string name="app_name">i200770</string>
+    <string name="app_name">JavaApplication</string>
+    <string-array name="Country_Items">
+        <item>Select Country</item>
+        <item>Pakistan</item>
+
+    </string-array>
+
+    <string-array name="City_Items">
+        <item>Select City</item>
+        <item>Islamabad</item>
+
+    </string-array>
+
 </resources>
