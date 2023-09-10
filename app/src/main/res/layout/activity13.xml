@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:background="#FFF">
+
+
+    <ImageButton
+        android:id="@+id/arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_arrow"
+        android:backgroundTint="#B5000000"
+        android:alpha="0.8"
+        android:layout_marginTop="55dp"
+        android:layout_marginLeft="20dp"
+        android:background="@android:color/transparent"/>
+
+    <TextView
+        android:id="@+id/editprofiletext"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:fontFamily="sans-serif"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="50dp"
+        android:text="Edit Profile"
+        android:textStyle="bold"
+        android:textColor="#B5000000"
+        android:textSize="24sp"></TextView>
+
+    <Button
+        android:id="@+id/savechangestext"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="44dp"
+        android:backgroundTint="@color/white"
+        android:textSize="18dp"
+        android:text="Save Changes"
+        android:textColor="#EE8205"></Button>
+
+    <View
+        android:id="@+id/line"
+        android:layout_marginTop="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#EEEEEE"/>
+
+    <TextView
+        android:id="@+id/reasontext"
+        android:paddingTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line"
+        android:fontFamily="sans-serif"
+        android:paddingLeft="20dp"
+        android:text="Name"
+        android:textStyle="bold"
+        android:textColor="#6E6D6D"
+        android:textSize="14sp"></TextView>
+
+    <EditText
+        android:id="@+id/editTextTextName"
+        android:layout_width="370dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/reasontext"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:alpha="0.5"
+        android:background="@drawable/edittext"
+        android:backgroundTint="#E3E3E3"
+        android:paddingLeft="15dp"
+        android:text="Daud"
+        android:textColor="@color/black"></EditText>
+
+    <TextView
+        android:id="@+id/emailtext"
+        android:paddingTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextTextName"
+        android:fontFamily="sans-serif"
+        android:paddingLeft="20dp"
+        android:text="Email"
+        android:textStyle="bold"
+        android:textColor="#6E6D6D"
+        android:textSize="14sp"></TextView>
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="370dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/emailtext"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:alpha="0.5"
+        android:background="@drawable/edittext"
+        android:backgroundTint="#E3E3E3"
+        android:paddingLeft="15dp"
+        android:text="daud@gmail.com"
+        android:textColor="@color/black"></EditText>
+
+    <TextView
+        android:id="@+id/contactText"
+        android:paddingTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextEmail"
+        android:fontFamily="sans-serif"
+        android:paddingLeft="20dp"
+        android:text="Contact Number"
+        android:textStyle="bold"
+        android:textColor="#6E6D6D"
+        android:textSize="14sp"></TextView>
+
+    <EditText
+        android:id="@+id/editTextContact"
+        android:layout_width="370dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/contactText"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:alpha="0.5"
+        android:background="@drawable/edittext"
+        android:backgroundTint="#E3E3E3"
+        android:paddingLeft="15dp"
+        android:text="0123 4567890"
+        android:textColor="@color/black"></EditText>
+
+
+    <TextView
+        android:id="@+id/countryText"
+        android:paddingTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextContact"
+        android:fontFamily="sans-serif"
+        android:paddingLeft="20dp"
+        android:text="Country"
+        android:textStyle="bold"
+        android:textColor="#6E6D6D"
+        android:textSize="14sp"></TextView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/countryspinner"
+        android:layout_width="370dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/countryText"
+        android:layout_centerInParent="true"
+        android:alpha="0.5"
+        app:cardCornerRadius="10dp"
+        android:paddingLeft="15dp">
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </Spinner>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pakistan"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            ></TextView>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/cityText"
+        android:paddingTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/countryspinner"
+        android:fontFamily="sans-serif"
+        android:paddingLeft="20dp"
+        android:text="City"
+        android:textStyle="bold"
+        android:textColor="#6E6D6D"
+        android:textSize="14sp"></TextView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cityspinner"
+        android:layout_width="370dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/cityText"
+        android:layout_centerInParent="true"
+        android:alpha="0.5"
+        app:cardCornerRadius="10dp"
+        android:paddingLeft="15dp">
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </Spinner>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Islamabad"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            ></TextView>
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</RelativeLayout>
