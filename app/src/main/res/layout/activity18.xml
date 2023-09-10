@@ -7,24 +7,24 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
         android:fontFamily="sans-serif"
-        android:text="00:58"
+        android:text="Caller Name"
         android:textStyle="bold"
         android:textSize="25dp"
         ></TextView>
 
-    <view class="androidx.recyclerview.widget.RecyclerView"
-        android:layout_width="160dp"
-        android:layout_height="200dp"
-        android:layout_marginTop="50dp"
-        android:layout_alignParentRight="true"
-        android:background="@drawable/edittext"
-        android:layout_marginRight="20dp"
-        >
-
-    </view>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="140dp"
+        android:fontFamily="sans-serif"
+        android:text="00:58"
+        android:textColor="#5B5B5B"
+        android:textSize="20dp"
+        ></TextView>
 
     <view class="android.widget.LinearLayout"
         android:id="@+id/whitearea"
