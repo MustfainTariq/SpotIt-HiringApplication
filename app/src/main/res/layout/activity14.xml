@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF">
+
+
+    <ImageButton
+        android:id="@+id/arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_arrow"
+        android:backgroundTint="#B5000000"
+        android:alpha="0.8"
+        android:layout_marginTop="55dp"
+        android:layout_marginLeft="20dp"
+        android:background="@android:color/transparent"/>
+
+    <TextView
+        android:id="@+id/ReportText"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:fontFamily="sans-serif"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="50dp"
+        android:text="Report"
+        android:textStyle="bold"
+        android:textColor="#B5000000"
+        android:textSize="24sp"></TextView>
+
+    <View
+        android:id="@+id/line"
+        android:layout_marginTop="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#EEEEEE"/>
+
+    <TextView
+        android:id="@+id/reasontext"
+        android:paddingTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line"
+        android:fontFamily="sans-serif"
+        android:paddingLeft="20dp"
+        android:text="Reaseon for reporting"
+        android:textStyle="bold"
+        android:textColor="#6E6D6D"
+        android:textSize="14sp"></TextView>
+
+    <EditText
+        android:id="@+id/editTextTextName"
+        android:layout_width="370dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/reasontext"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:alpha="0.5"
+        android:background="@drawable/edittext"
+        android:backgroundTint="#E3E3E3"
+        android:paddingLeft="15dp"
+        android:paddingBottom="40dp"
+        android:text="Enter reason here"></EditText>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/submitbutton"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/rectangle_button"
+        android:text="Submit Report"
+        android:textAllCaps="false"
+        android:textColor="@color/white"></androidx.appcompat.widget.AppCompatButton>
+
+
+</RelativeLayout>
