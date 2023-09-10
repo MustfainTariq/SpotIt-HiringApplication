@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:background="#FFF">
+
+
+    <ImageButton
+        android:id="@+id/arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/cross_white"
+        android:layout_marginTop="47dp"
+        android:layout_marginLeft="10dp"
+        android:background="@android:color/transparent"/>
+
+    <TextView
+        android:id="@+id/itemtext"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:fontFamily="sans-serif"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="50dp"
+        android:text="Item"
+        android:textStyle="bold"
+        android:textColor="#B5000000"
+        android:textSize="24sp"></TextView>
+
+
+    <View
+        android:id="@+id/line"
+        android:layout_marginTop="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#EEEEEE"/>
+
+    <ImageButton
+        android:layout_width="180dp"
+        android:layout_height="150dp"
+        android:id="@+id/upload_image"
+        android:layout_below="@id/line"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/upload_img">
+    </ImageButton>
+
+    <ImageButton
+        android:layout_width="180dp"
+        android:layout_height="146dp"
+        android:id="@+id/upload_vid"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/line"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/upload_vid">
+    </ImageButton>
+
+    <TextView
+        android:id="@+id/Itemtext"
+        android:paddingTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/upload_image"
+        android:fontFamily="sans-serif"
+        android:paddingLeft="20dp"
+        android:text="Name"
+        android:textStyle="bold"
+        android:textColor="#6E6D6D"
+        android:textSize="14sp"></TextView>
+
+    <EditText
+        android:id="@+id/editTextItemName"
+        android:layout_width="370dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/Itemtext"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:alpha="0.5"
+        android:background="@drawable/edittext"
+        android:backgroundTint="#E3E3E3"
+        android:paddingLeft="15dp"
+        android:text="Enter item name"
+        android:textColor="@color/black"></EditText>
+
+    <TextView
+        android:id="@+id/RateText"
+        android:paddingTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextItemName"
+        android:fontFamily="sans-serif"
+        android:paddingLeft="20dp"
+        android:text="Hourly Rate"
+        android:textStyle="bold"
+        android:textColor="#6E6D6D"
+        android:textSize="14sp"></TextView>
+
+    <EditText
+        android:id="@+id/edittextrate"
+        android:layout_width="370dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/RateText"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:alpha="0.5"
+        android:background="@drawable/edittext"
+        android:backgroundTint="#E3E3E3"
+        android:paddingLeft="15dp"
+        android:text="Enter hourly rate"
+        android:textColor="@color/black"></EditText>
+
+    <TextView
+        android:id="@+id/Destext"
+        android:paddingTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edittextrate"
+        android:fontFamily="sans-serif"
+        android:paddingLeft="20dp"
+        android:text="Description"
+        android:textStyle="bold"
+        android:textColor="#6E6D6D"
+        android:textSize="14sp"></TextView>
+
+    <EditText
+        android:id="@+id/edittextDesc"
+        android:layout_width="370dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/Destext"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:alpha="0.5"
+        android:background="@drawable/edittext"
+        android:backgroundTint="#E3E3E3"
+        android:paddingLeft="15dp"
+        android:text="Enter description"
+        android:paddingBottom="40dp"
+        android:textColor="@color/black"></EditText>
+
+
+    <TextView
+        android:id="@+id/cityText"
+        android:paddingTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edittextDesc"
+        android:fontFamily="sans-serif"
+        android:paddingLeft="20dp"
+        android:text="City"
+        android:textStyle="bold"
+        android:textColor="#6E6D6D"
+        android:textSize="14sp"></TextView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cityspinner"
+        android:layout_width="370dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/cityText"
+        android:layout_centerInParent="true"
+        android:alpha="0.5"
+        app:cardCornerRadius="10dp"
+        android:paddingLeft="15dp">
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </Spinner>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Islamabad"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            ></TextView>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/postbutton"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/rectangle_button"
+        android:text="Post Item"
+        android:textAllCaps="false"
+        android:textColor="@color/white"></androidx.appcompat.widget.AppCompatButton>
+
+
+</RelativeLayout>
