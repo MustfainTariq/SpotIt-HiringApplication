@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:background="#FFF">
+
+
+    <ImageButton
+        android:id="@+id/arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_arrow"
+        android:backgroundTint="#B5000000"
+        android:alpha="0.8"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="20dp"
+        android:background="@android:color/transparent"/>
+
+
+    <TextView
+        android:id="@+id/itemtext"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:fontFamily="sans-serif"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="50dp"
+        android:text="Item"
+        android:textStyle="bold"
+        android:textColor="#B5000000"
+        android:textSize="24sp"></TextView>
+
+
+    <View
+        android:id="@+id/line"
+        android:layout_alignTop="@+id/rentbutton"
+        android:layout_marginTop="-15dp"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#EEEEEE"/>
+
+
+    <Button
+        android:id="@+id/reporttext"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/white"
+        android:paddingLeft="100dp"
+        android:textSize="20dp"
+        android:text="Report"
+        android:textColor="#EE8205"></Button>
+
+
+    <View
+        android:id="@+id/box"
+        android:layout_below="@id/reporttext"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:background="#EEEEEE"/>
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="$12"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-black"
+        android:textColor="#EE8205"
+        android:layout_marginLeft="20dp"
+        android:textSize="24sp"
+        android:layout_below="@id/box">
+
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_toRightOf="@+id/price"
+        android:text="/ hr"
+        android:layout_marginLeft="5dp"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:layout_below="@id/box">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/itemnametext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/price"
+        android:layout_marginLeft="20dp"
+        android:text="Name of the Item comes here"
+        android:textStyle="bold"
+        android:textColor="#B5000000"
+        android:textSize="22sp"></TextView>
+
+
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/rentbutton"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/rectangle_button"
+        android:text="Rent it"
+        android:textAllCaps="false"
+        android:textColor="@color/white"></androidx.appcompat.widget.AppCompatButton>
+
+
+</RelativeLayout>

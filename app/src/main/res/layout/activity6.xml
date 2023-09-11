@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF">
+    <TextView
+        android:id="@+id/findtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
+        android:text="Find exactly what you need!"
+        android:textStyle="bold"
+        android:textColor="#B5000000"
+        android:textSize="24sp"></TextView>
+
+<LinearLayout
+    android:id="@+id/searchbox"
+    android:layout_width="370dp"
+    android:layout_height="50dp"
+    android:layout_below="@id/findtext"
+    android:alpha="0.5"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="10dp">
+    <EditText
+        android:id="@+id/editTextTextName"
+        android:layout_width="370dp"
+        android:layout_height="50dp"
+        android:background="@drawable/edittext"
+        android:backgroundTint="#E3E3E3"
+        android:text="Search"
+        android:paddingLeft="50dp">
+    </EditText>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-350dp"
+        android:layout_marginTop="14dp"
+        android:background="?android:attr/actionModeWebSearchDrawable"></ImageView>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/recentsearchtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/searchbox"
+        android:alpha="0.9"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:text="Recent Searches"
+        android:textColor="#B5000000"
+        android:textSize="18sp"></TextView>
+
+
+    <TextView
+        android:id="@+id/item1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:layout_below="@id/recentsearchtext"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:text="Item Number One"
+        android:textColor="#B5000000"
+        android:textSize="22sp"></TextView>
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/arrow"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/recentsearchtext"
+        android:layout_toLeftOf="@id/item1"
+        android:layout_marginTop="13dp"
+        android:layout_marginRight="20dp">
+    </androidx.appcompat.widget.AppCompatImageButton>
+
+    <TextView
+        android:id="@+id/item2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:layout_below="@id/item1"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:text="Item Number Two"
+        android:textColor="#B5000000"
+        android:textSize="22sp"></TextView>
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/arrow"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/item1"
+        android:layout_toLeftOf="@id/item2"
+        android:layout_marginTop="13dp"
+        android:layout_marginRight="20dp">
+    </androidx.appcompat.widget.AppCompatImageButton>
+
+
+    <TextView
+        android:id="@+id/item3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:layout_below="@id/item2"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:text="Item Number Three"
+        android:textColor="#B5000000"
+        android:textSize="22sp"></TextView>
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/arrow"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/item2"
+        android:layout_toLeftOf="@id/item3"
+        android:layout_marginTop="13dp"
+        android:layout_marginRight="20dp">
+    </androidx.appcompat.widget.AppCompatImageButton>
+
+
+
+
+    <TextView
+        android:id="@+id/popularsearchtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/searchbox"
+        android:alpha="0.9"
+        android:layout_marginTop="180dp"
+        android:layout_marginLeft="20dp"
+        android:text="Popular Searches"
+        android:textColor="#B5000000"
+        android:textSize="18sp"></TextView>
+
+
+    <TextView
+        android:id="@+id/item1p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:layout_below="@id/popularsearchtext"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:text="Item Number One"
+        android:textColor="#B5000000"
+        android:textSize="22sp"></TextView>
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/arrow"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/popularsearchtext"
+        android:layout_toLeftOf="@id/item1p"
+        android:layout_marginTop="13dp"
+        android:layout_marginRight="20dp">
+    </androidx.appcompat.widget.AppCompatImageButton>
+
+    <TextView
+        android:id="@+id/item2p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:layout_below="@id/item1p"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:text="Item Number Two"
+        android:textColor="#B5000000"
+        android:textSize="22sp"></TextView>
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/arrow"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/item1p"
+        android:layout_toLeftOf="@id/item2p"
+        android:layout_marginTop="13dp"
+        android:layout_marginRight="20dp">
+    </androidx.appcompat.widget.AppCompatImageButton>
+
+
+    <TextView
+        android:id="@+id/item3p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:layout_below="@id/item2p"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:text="Item Number Three"
+        android:textColor="#B5000000"
+        android:textSize="22sp"></TextView>
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/arrow"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/item2p"
+        android:layout_toLeftOf="@id/item3p"
+        android:layout_marginTop="13dp"
+        android:layout_marginRight="20dp">
+    </androidx.appcompat.widget.AppCompatImageButton>
+
+
+    <TextView
+        android:id="@+id/item4p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:layout_below="@id/item3p"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:text="Item Number Four"
+        android:textColor="#B5000000"
+        android:textSize="22sp"></TextView>
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/arrow"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/item3p"
+        android:layout_toLeftOf="@id/item4p"
+        android:layout_marginTop="13dp"
+        android:layout_marginRight="20dp">
+    </androidx.appcompat.widget.AppCompatImageButton>
+
+
+    <View
+        android:id="@+id/line"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="120dp"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#EEEEEE"/>
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_toLeftOf="@id/add_btn"
+        android:layout_alignTop="@id/line"
+        android:layout_marginRight="80dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/home_btn"
+        >
+    </androidx.appcompat.widget.AppCompatImageButton>
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:layout_width="65dp"
+        android:layout_height="68dp"
+        android:layout_alignTop="@id/line"
+        android:layout_marginTop="28dp"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@id/add_btn"
+        android:background="@drawable/search_btn"></androidx.appcompat.widget.AppCompatImageButton>
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/add_btn"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignTop="@id/line"
+        android:background="@drawable/add_btn"
+        >
+
+    </androidx.appcompat.widget.AppCompatImageButton>
+
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:layout_width="65dp"
+        android:layout_height="68dp"
+        android:layout_alignTop="@id/line"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@id/add_btn"
+        android:background="@drawable/chat_btn"></androidx.appcompat.widget.AppCompatImageButton>
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:layout_width="65dp"
+        android:layout_height="68dp"
+        android:layout_alignTop="@id/line"
+        android:layout_marginTop="28dp"
+        android:layout_marginLeft="80dp"
+        android:layout_toRightOf="@id/add_btn"
+        android:background="@drawable/profile_btn">
+    </androidx.appcompat.widget.AppCompatImageButton>
+
+</RelativeLayout>
