@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF">
+    <TextView
+        android:id="@+id/findtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
+        android:text="Chat"
+        android:textStyle="bold"
+        android:textColor="#B5000000"
+        android:textSize="24sp"></TextView>
+
+    <View
+        android:id="@+id/line2"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#EEEEEE"/>
+
+
+
+
+    <ImageButton
+        android:id="@+id/img1"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@id/line2"
+        android:background="@drawable/img1">
+    </ImageButton>
+
+    <TextView
+        android:id="@+id/person_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/line2"
+        android:layout_marginLeft="100dp"
+        android:text="Makenna Dias"
+        android:textStyle="bold"
+        android:textColor="#B5000000"
+        android:textSize="22sp"></TextView>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_below="@id/person_name"
+        android:layout_toRightOf="@id/img1"
+        android:layout_marginLeft="10dp"
+        android:textColor="#EE8205"
+        android:textSize="15dp"
+        android:text="1 new message">
+    </TextView>
+
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:id="@+id/arrow1"
+        android:background="@drawable/arrow_icon"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/line2">
+    </ImageButton>
+
+
+    <View
+        android:id="@+id/line3"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="200dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#EEEEEE"/>
+
+
+
+
+    <ImageButton
+        android:id="@+id/img2"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@id/line3"
+        android:background="@drawable/img2">
+    </ImageButton>
+
+    <TextView
+        android:id="@+id/person_name2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/line3"
+        android:layout_marginLeft="100dp"
+        android:text="Miracle Philips"
+        android:textStyle="bold"
+        android:textColor="#B5000000"
+        android:textSize="22sp"></TextView>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_below="@id/person_name2"
+        android:layout_toRightOf="@id/img2"
+        android:layout_marginLeft="10dp"
+        android:textColor="#6E7174"
+        android:alpha="0.8"
+        android:textSize="15dp"
+        android:text="No new messages">
+    </TextView>
+
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:id="@+id/arrow2"
+        android:background="@drawable/arrow_icon"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/line3">
+    </ImageButton>
+
+    <View
+        android:id="@+id/line4"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="300dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#EEEEEE"/>
+
+
+
+
+    <ImageButton
+        android:id="@+id/img3"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@id/line4"
+        android:background="@drawable/img3">
+    </ImageButton>
+
+    <TextView
+        android:id="@+id/person_name3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/line4"
+        android:layout_marginLeft="100dp"
+        android:text="Miracle Philips"
+        android:textStyle="bold"
+        android:textColor="#B5000000"
+        android:textSize="22sp"></TextView>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_below="@id/person_name3"
+        android:layout_toRightOf="@id/img3"
+        android:layout_marginLeft="10dp"
+        android:textColor="#6E7174"
+        android:alpha="0.8"
+        android:textSize="15dp"
+        android:text="No new messages">
+    </TextView>
+
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:id="@+id/arrow3"
+        android:background="@drawable/arrow_icon"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/line4">
+    </ImageButton>
+
+
+
+
+
+
+
+
+
+    <View
+        android:id="@+id/line"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="120dp"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#EEEEEE"/>
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_toLeftOf="@id/add_btn"
+        android:layout_alignTop="@id/line"
+        android:layout_marginRight="80dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/home_btn"
+        >
+    </androidx.appcompat.widget.AppCompatImageButton>
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:layout_width="65dp"
+        android:layout_height="68dp"
+        android:layout_alignTop="@id/line"
+        android:layout_marginTop="28dp"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@id/add_btn"
+        android:background="@drawable/search_btn"></androidx.appcompat.widget.AppCompatImageButton>
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/add_btn"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignTop="@id/line"
+        android:background="@drawable/add_btn"
+        >
+
+    </androidx.appcompat.widget.AppCompatImageButton>
+
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:layout_width="65dp"
+        android:layout_height="68dp"
+        android:layout_alignTop="@id/line"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@id/add_btn"
+        android:background="@drawable/chat_btn"></androidx.appcompat.widget.AppCompatImageButton>
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:layout_width="65dp"
+        android:layout_height="68dp"
+        android:layout_alignTop="@id/line"
+        android:layout_marginTop="28dp"
+        android:layout_marginLeft="80dp"
+        android:layout_toRightOf="@id/add_btn"
+        android:background="@drawable/profile_btn">
+    </androidx.appcompat.widget.AppCompatImageButton>
+
+</RelativeLayout>

@@ -57,7 +57,7 @@
         android:id="@+id/box"
         android:layout_below="@id/reporttext"
         android:layout_width="match_parent"
-        android:layout_height="350dp"
+        android:layout_height="340dp"
         android:background="#EEEEEE"/>
 
     <TextView
@@ -103,6 +103,106 @@
 
 
 
+    <ImageView
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:id="@+id/location_icon"
+        android:background="@drawable/location"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/itemnametext">
+    </ImageView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/location_icon"
+        android:layout_below="@id/itemnametext"
+        android:layout_marginLeft="5dp"
+        android:textColor="#9B9B9B"
+        android:textSize="15dp"
+        android:layout_marginTop="5dp"
+        android:text="Islamabad">
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_below="@id/itemnametext"
+        android:layout_marginLeft="5dp"
+        android:textColor="#9B9B9B"
+        android:textSize="15dp"
+        android:layout_marginTop="5dp"
+        android:text="7th Mar, 2023">
+    </TextView>
+
+    <TextView
+        android:id="@+id/desctext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/location_icon"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="20dp"
+        android:text="Lorem ipsum dolor sit amet, consectetur
+adipiscing elit. Mauris nec nisi a sem
+elementum condimentum. Proin volutpat erat
+tortor, eu gravida orci efficitur eget.">
+    </TextView>
+
+
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/profile"
+        android:background="@drawable/profile"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/desctext">
+    </ImageButton>
+
+
+    <TextView
+        android:id="@+id/person_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/desctext"
+        android:layout_marginLeft="80dp"
+        android:text="Ryan Calzoni"
+        android:textStyle="bold"
+        android:textColor="#B5000000"
+        android:textSize="22sp"></TextView>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_below="@id/person_name"
+        android:layout_toRightOf="@id/profile"
+        android:layout_marginLeft="10dp"
+        android:textColor="#9B9B9B"
+        android:textSize="15dp"
+        android:text="24 items rented">
+    </TextView>
+
+
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/chat_box"
+        android:background="@drawable/chat_icon"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/desctext">
+    </ImageButton>
 
 
     <androidx.appcompat.widget.AppCompatButton
@@ -116,6 +216,8 @@
         android:text="Rent it"
         android:textAllCaps="false"
         android:textColor="@color/white"></androidx.appcompat.widget.AppCompatButton>
+
+
 
 
 </RelativeLayout>
