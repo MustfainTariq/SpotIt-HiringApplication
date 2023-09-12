@@ -7,46 +7,48 @@
 
 
 
-            <ImageButton
-                android:id="@+id/arrow"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_marginLeft="0dp"
-                android:layout_marginTop="30dp"
-                android:alpha="0.8"
-                android:background="@android:color/transparent"
-                android:backgroundTint="#B5000000"
-                android:src="@drawable/ic_arrow" />
+    <ImageButton
+        android:id="@+id/arrow"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="30dp"
+        android:alpha="0.8"
+        android:background="@android:color/transparent"
+        android:backgroundTint="#B5000000"
+        android:src="@drawable/ic_arrow" />
 
-            <TextView
-                android:id="@+id/personname"
-                android:layout_width="wrap_content"
-                android:layout_height="50dp"
-                android:layout_marginLeft="50dp"
-                android:layout_marginTop="33dp"
-                android:fontFamily="sans-serif"
-                android:text="Makenna Dias"
-                android:textColor="#B5000000"
-                android:textSize="28sp"
-                android:textStyle="bold"></TextView>
-
-
-            <androidx.appcompat.widget.AppCompatImageButton
-                android:layout_width="50dp"
-                android:layout_height="40dp"
-                android:layout_alignParentRight="true"
-                android:layout_marginTop="35dp"
-                android:layout_marginRight="80dp"
-                android:background="@drawable/voice_call_icon"></androidx.appcompat.widget.AppCompatImageButton>
+    <TextView
+        android:id="@+id/personname"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="33dp"
+        android:fontFamily="sans-serif"
+        android:text="Makenna Dias"
+        android:textColor="#B5000000"
+        android:textSize="28sp"
+        android:textStyle="bold"></TextView>
 
 
-            <androidx.appcompat.widget.AppCompatImageButton
-                android:layout_width="60dp"
-                android:layout_height="40dp"
-                android:layout_alignParentRight="true"
-                android:layout_marginTop="35dp"
-                android:layout_marginRight="20dp"
-                android:background="@drawable/video_call_icon"></androidx.appcompat.widget.AppCompatImageButton>
+    <ImageButton
+        android:id="@+id/voice_call"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="35dp"
+        android:layout_marginRight="80dp"
+        android:background="@drawable/voice_call_icon"></ImageButton>
+
+
+    <ImageButton
+        android:id="@+id/video_call"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="35dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/video_call_icon"></ImageButton>
 
     <View
         android:id="@+id/line3"

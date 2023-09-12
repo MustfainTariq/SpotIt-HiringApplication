@@ -36,18 +36,19 @@
         android:background="@drawable/img1">
     </ImageButton>
 
-    <TextView
+    <Button
+        android:backgroundTint="@color/white"
         android:id="@+id/person_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif"
         android:layout_marginTop="20dp"
         android:layout_below="@id/line2"
-        android:layout_marginLeft="100dp"
+        android:layout_marginLeft="80dp"
         android:text="Makenna Dias"
         android:textStyle="bold"
         android:textColor="#B5000000"
-        android:textSize="22sp"></TextView>
+        android:textSize="22sp"></Button>
 
 
     <TextView

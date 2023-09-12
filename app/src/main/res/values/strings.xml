@@ -11,5 +11,6 @@
         <item>Islamabad</item>
 
     </string-array>
+    <string name="title_activity_sign_up">SignUp</string>
 
 </resources>
