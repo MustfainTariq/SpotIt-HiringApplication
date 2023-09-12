@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:background="#FFF">
+
+
+
+            <ImageButton
+                android:id="@+id/arrow"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="30dp"
+                android:alpha="0.8"
+                android:background="@android:color/transparent"
+                android:backgroundTint="#B5000000"
+                android:src="@drawable/ic_arrow" />
+
+            <TextView
+                android:id="@+id/personname"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="33dp"
+                android:fontFamily="sans-serif"
+                android:text="Makenna Dias"
+                android:textColor="#B5000000"
+                android:textSize="28sp"
+                android:textStyle="bold"></TextView>
+
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="35dp"
+                android:layout_marginRight="80dp"
+                android:background="@drawable/voice_call_icon"></androidx.appcompat.widget.AppCompatImageButton>
+
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="35dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/video_call_icon"></androidx.appcompat.widget.AppCompatImageButton>
+
+    <View
+        android:id="@+id/line3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="100dp"
+        android:background="#EEEEEE" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:layout_centerInParent="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <View
+                android:id="@+id/line"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="#EEEEEE" />
+
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/img1"></ImageView>
+
+
+            <TextView
+                android:id="@+id/msg1"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/line"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittext"
+                android:backgroundTint="#E3E3E3"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:text="This is a sample message"
+
+                android:textSize="20dp"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/line"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="40dp"
+                android:layout_toRightOf="@id/msg1"
+                android:alpha="0.7"
+                android:text="18:56">
+
+            </TextView>
+
+
+            <TextView
+                android:id="@+id/msg2"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/msg1"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/edittext"
+                android:backgroundTint="#EE8205"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:text="This is a sample message"
+                android:textColor="@color/white"
+                android:textSize="20dp"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/msg1"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@id/msg2"
+                android:alpha="0.7"
+                android:text="18:56"></TextView>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_below="@id/msg2"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/img1"></ImageView>
+
+            <TextView
+                android:id="@+id/msg3"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/msg2"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/edittext"
+                android:backgroundTint="#E3E3E3"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:text="This is a sample message"
+                android:textSize="20dp"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/msg2"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="40dp"
+                android:layout_toRightOf="@id/msg1"
+                android:alpha="0.7"
+                android:text="18:56">
+
+            </TextView>
+
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_below="@id/msg3"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/img1"></ImageView>
+
+            <TextView
+                android:id="@+id/msg4"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/msg3"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/edittext"
+                android:backgroundTint="#E3E3E3"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:text="This is a sample message"
+                android:textSize="20dp"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/msg3"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="40dp"
+                android:layout_toRightOf="@id/msg1"
+                android:alpha="0.7"
+                android:text="18:56">
+
+            </TextView>
+
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_below="@id/msg4"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/img1"></ImageView>
+
+            <TextView
+                android:id="@+id/msg5"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/msg4"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/edittext"
+                android:backgroundTint="#E3E3E3"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:text="This is a sample message"
+                android:textSize="20dp"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/msg4"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="40dp"
+                android:layout_toRightOf="@id/msg1"
+                android:alpha="0.7"
+                android:text="18:56">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/msg6"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/msg5"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/edittext"
+                android:backgroundTint="#EE8205"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:text="This is a sample message"
+                android:textColor="@color/white"
+                android:textSize="20dp"></TextView>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/msg5"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@id/msg2"
+                android:alpha="0.7"
+                android:text="18:56"></TextView>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/msg6"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@id/msg2"
+                android:alpha="0.7"
+                android:text="18:56"></TextView>
+
+            <TextView
+                android:id="@+id/msg7"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/msg6"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/edittext"
+                android:backgroundTint="#EE8205"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:text="This is a sample message"
+                android:textColor="@color/white"
+                android:textSize="20dp"></TextView>
+
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_below="@id/msg7"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/img1"></ImageView>
+
+            <TextView
+                android:id="@+id/msg8"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/msg7"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/edittext"
+                android:backgroundTint="#E3E3E3"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:text="This is a sample message"
+                android:textSize="20dp"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/msg7"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="40dp"
+                android:layout_toRightOf="@id/msg1"
+                android:alpha="0.7"
+                android:text="18:56"></TextView>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_below="@id/msg8"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/img1"></ImageView>
+
+            <TextView
+                android:id="@+id/msg9"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_below="@+id/msg8"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/edittext"
+                android:backgroundTint="#E3E3E3"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:text="  . . .    "
+                android:textSize="20dp"></TextView>
+        </RelativeLayout>
+    </ScrollView>
+
+    <View
+        android:id="@+id/line2"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="130dp"
+        android:background="#EEEEEE"/>
+
+    <EditText
+        android:id="@+id/replybox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Write a reply..."
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/edittext"
+        android:alpha="0.6"
+        android:layout_alignTop="@id/line2"
+        android:textSize="25dp">
+    </EditText>
+
+    <ImageButton
+        android:layout_below="@id/replybox"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/cam_icon">
+    </ImageButton>
+
+
+    <ImageButton
+        android:layout_below="@id/replybox"
+        android:layout_marginTop="22dp"
+        android:layout_marginLeft="75dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/gallery_icon">
+    </ImageButton>
+
+    <ImageButton
+        android:layout_below="@id/replybox"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="135dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/doc_icon">
+    </ImageButton>
+
+
+    <Button
+        android:id="@+id/resendcode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/replybox"
+        android:backgroundTint="@color/white"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="18dp"
+        android:text="Send"
+        android:textStyle="bold"
+        android:textSize="26dp"
+        android:textColor="#EE8205"></Button>
+
+</RelativeLayout>
