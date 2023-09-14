@@ -10,7 +10,6 @@ import android.widget.Button;
 public class MainActivity extends AppCompatActivity {
     Button loginbutton;
     Button signupbutton;
-
     Button forgotpass;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,5 +42,5 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-    }
+   }
 }

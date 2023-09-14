@@ -261,7 +261,7 @@
         android:layout_marginTop="28dp"
         android:layout_marginRight="10dp"
         android:layout_toLeftOf="@id/add_btn"
-        android:background="@drawable/search_btn"></ImageButton>
+        android:background="@drawable/search_ebtn"></ImageButton>
 
     <androidx.appcompat.widget.AppCompatImageButton
         android:id="@+id/add_btn"
@@ -283,7 +283,7 @@
         android:layout_marginLeft="8dp"
         android:layout_marginTop="30dp"
         android:layout_toRightOf="@id/add_btn"
-        android:background="@drawable/chat_btn"></androidx.appcompat.widget.AppCompatImageButton>
+        android:background="@drawable/chat_nbtn"></androidx.appcompat.widget.AppCompatImageButton>
 
     <androidx.appcompat.widget.AppCompatImageButton
         android:layout_width="65dp"

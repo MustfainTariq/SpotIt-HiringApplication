@@ -1,0 +1,13 @@
+<!-- dot_unselected.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+
+    <!-- Define the color for the unselected dot -->
+    <solid android:color="#FFFFFF" /> <!-- Change to your desired color -->
+
+    <!-- Define the size (width and height) of the dot -->
+    <size
+        android:width="16dp"
+    android:height="16dp"
+    />
+</shape>

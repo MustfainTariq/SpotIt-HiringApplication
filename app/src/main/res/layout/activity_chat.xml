@@ -252,7 +252,7 @@
         android:layout_marginLeft="8dp"
         android:layout_marginTop="30dp"
         android:layout_toRightOf="@id/add_btn"
-        android:background="@drawable/chat_btn"></androidx.appcompat.widget.AppCompatImageButton>
+        android:background="@drawable/chat_ebtn"></androidx.appcompat.widget.AppCompatImageButton>
 
     <androidx.appcompat.widget.AppCompatImageButton
         android:layout_width="65dp"

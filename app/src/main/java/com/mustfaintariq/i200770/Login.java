@@ -12,6 +12,8 @@ public class Login extends AppCompatActivity {
 
     ImageButton search;
     ImageButton chat;
+
+    ImageButton addbtn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,6 +21,7 @@ public class Login extends AppCompatActivity {
 
         search = (ImageButton) findViewById(R.id.search_icon);
         chat = (ImageButton) findViewById(R.id.chat_icon);
+        addbtn = (ImageButton) findViewById(R.id.add_btn);
 
         search.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -31,6 +34,14 @@ public class Login extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(v.getContext(), Chat.class);
+                startActivity(intent);
+            }
+        });
+
+        addbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(v.getContext(), Item.class);
                 startActivity(intent);
             }
         });
