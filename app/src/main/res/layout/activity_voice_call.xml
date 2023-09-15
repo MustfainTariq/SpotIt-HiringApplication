@@ -71,7 +71,8 @@
 
     </androidx.appcompat.widget.AppCompatButton>
 
-    <androidx.appcompat.widget.AppCompatButton
+    <ImageButton
+        android:id="@+id/arrow"
         android:layout_width="110dp"
         android:layout_height="70dp"
         android:background="@drawable/redcancel"
@@ -79,7 +80,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="100dp"
         >
-    </androidx.appcompat.widget.AppCompatButton>
+    </ImageButton>
 
 
     <androidx.appcompat.widget.AppCompatButton

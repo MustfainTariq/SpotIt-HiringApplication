@@ -54,17 +54,18 @@
         android:textSize="18sp"></TextView>
 
 
-    <TextView
+    <Button
         android:id="@+id/item1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif"
+        android:backgroundTint="@color/white"
         android:layout_below="@id/recentsearchtext"
+        android:paddingLeft="20dp"
         android:layout_marginTop="10dp"
-        android:layout_marginLeft="20dp"
         android:text="Item Number One"
         android:textColor="#B5000000"
-        android:textSize="22sp"></TextView>
+        android:textSize="22sp"></Button>
 
     <androidx.appcompat.widget.AppCompatImageButton
         android:layout_width="wrap_content"
@@ -243,18 +244,20 @@
         android:layout_height="2dp"
         android:background="#EEEEEE"/>
 
-    <androidx.appcompat.widget.AppCompatImageButton
-        android:layout_width="80dp"
-        android:layout_height="80dp"
+    <ImageButton
+        android:id="@+id/homebtn"
+        android:layout_width="90dp"
+        android:layout_height="70dp"
         android:layout_toLeftOf="@id/add_btn"
         android:layout_alignTop="@id/line"
         android:layout_marginRight="80dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="25dp"
         android:background="@drawable/home_btn"
         >
-    </androidx.appcompat.widget.AppCompatImageButton>
+    </ImageButton>
 
     <ImageButton
+        android:id="@+id/search_icon"
         android:layout_width="65dp"
         android:layout_height="68dp"
         android:layout_alignTop="@id/line"
@@ -263,7 +266,7 @@
         android:layout_toLeftOf="@id/add_btn"
         android:background="@drawable/search_ebtn"></ImageButton>
 
-    <androidx.appcompat.widget.AppCompatImageButton
+    <ImageButton
         android:id="@+id/add_btn"
         android:layout_width="100dp"
         android:layout_height="100dp"
@@ -273,19 +276,21 @@
         android:background="@drawable/add_btn"
         >
 
-    </androidx.appcompat.widget.AppCompatImageButton>
+    </ImageButton>
 
 
-    <androidx.appcompat.widget.AppCompatImageButton
+    <ImageButton
+        android:id="@+id/chat_icon"
         android:layout_width="65dp"
         android:layout_height="68dp"
         android:layout_alignTop="@id/line"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="30dp"
         android:layout_toRightOf="@id/add_btn"
-        android:background="@drawable/chat_nbtn"></androidx.appcompat.widget.AppCompatImageButton>
+        android:background="@drawable/chat_nbtn"></ImageButton>
 
-    <androidx.appcompat.widget.AppCompatImageButton
+    <ImageButton
+        android:id="@+id/profile"
         android:layout_width="65dp"
         android:layout_height="68dp"
         android:layout_alignTop="@id/line"
@@ -293,6 +298,6 @@
         android:layout_marginLeft="80dp"
         android:layout_toRightOf="@id/add_btn"
         android:background="@drawable/profile_btn">
-    </androidx.appcompat.widget.AppCompatImageButton>
+    </ImageButton>
 
 </RelativeLayout>

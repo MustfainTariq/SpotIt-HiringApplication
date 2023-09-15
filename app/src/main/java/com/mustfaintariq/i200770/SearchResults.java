@@ -7,41 +7,27 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 
-public class Profile extends AppCompatActivity {
+public class SearchResults extends AppCompatActivity {
 
-    ImageButton search;
-
-    ImageButton edit;
+    ImageButton arrow;
     ImageButton chat;
 
     ImageButton addbtn;
+
+    ImageButton profile;
 
     ImageButton home;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_profile);
-        search = (ImageButton) findViewById(R.id.search_icon);
+        setContentView(R.layout.activity_search_results);
+
         chat = (ImageButton) findViewById(R.id.chat_icon);
         addbtn = (ImageButton) findViewById(R.id.add_btn);
+        profile = (ImageButton) findViewById(R.id.profile);
         home = (ImageButton) findViewById(R.id.homebtn);
-        edit = (ImageButton) findViewById(R.id.edit);
+        arrow = (ImageButton) findViewById(R.id.arrow);
 
-        edit.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(v.getContext(), EditProfile.class);
-                startActivity(intent);
-            }
-        });
-
-        search.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(v.getContext(), Search.class);
-                startActivity(intent);
-            }
-        });
         chat.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -59,6 +45,13 @@ public class Profile extends AppCompatActivity {
         });
 
 
+        profile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(v.getContext(), Profile.class);
+                startActivity(intent);
+            }
+        });
         home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -67,5 +60,12 @@ public class Profile extends AppCompatActivity {
             }
         });
 
+        arrow.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(v.getContext(), Search.class);
+                startActivity(intent);
+            }
+        });
     }
 }

@@ -10,6 +10,8 @@ import android.widget.ImageButton;
 public class Conservation extends AppCompatActivity {
     ImageButton voicecall;
     ImageButton videocall;
+
+    ImageButton arrow;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,6 +31,15 @@ public class Conservation extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(v.getContext(), VideoCall.class);
+                startActivity(intent);
+            }
+        });
+
+        arrow = (ImageButton) findViewById(R.id.arrow);
+        arrow.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(v.getContext(), Chat.class);
                 startActivity(intent);
             }
         });

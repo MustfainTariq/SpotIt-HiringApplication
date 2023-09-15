@@ -7,18 +7,19 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 
-public class VoiceCall extends AppCompatActivity {
+public class EditProfile extends AppCompatActivity {
+
     ImageButton arrow;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_voice_call);
+        setContentView(R.layout.activity_edit_profile);
         arrow = (ImageButton) findViewById(R.id.arrow);
 
         arrow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(v.getContext(), Conservation.class);
+                Intent intent = new Intent(v.getContext(), Profile.class);
                 startActivity(intent);
             }
         });

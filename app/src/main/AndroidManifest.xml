@@ -13,6 +13,24 @@
         android:theme="@style/Theme.I200770"
         tools:targetApi="31">
         <activity
+            android:name=".EditProfile"
+            android:exported="false" />
+        <activity
+            android:name=".Video"
+            android:exported="false" />
+        <activity
+            android:name=".Photo"
+            android:exported="false" />
+        <activity
+            android:name=".Report"
+            android:exported="false" />
+        <activity
+            android:name=".PostItem"
+            android:exported="false" />
+        <activity
+            android:name=".SearchResults"
+            android:exported="false" />
+        <activity
             android:name=".Profile"
             android:exported="false"
             android:label="@string/title_activity_profile"

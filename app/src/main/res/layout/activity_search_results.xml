@@ -4,124 +4,87 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="#FFF">
+
+    <ImageButton
+        android:id="@+id/arrow"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="30dp"
+        android:alpha="0.8"
+        android:background="@android:color/transparent"
+        android:backgroundTint="#B5000000"
+        android:src="@drawable/ic_arrow" />
+
     <TextView
-        android:id="@+id/profiletxt"
+        android:id="@+id/searchtxt"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="33dp"
         android:fontFamily="sans-serif"
-        android:layout_marginTop="20dp"
+        android:text="Seacrh Results"
+        android:textColor="#B5000000"
+        android:textSize="28sp"
+        android:textStyle="bold"></TextView>
+
+    <View
+        android:id="@+id/border4"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/searchtxt"
+        android:background="#E7E7E7"
+        />
+
+
+
+
+    <TextView
+        android:id="@+id/searchresult"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@id/border4"
         android:layout_marginLeft="20dp"
-        android:text="Profile"
-        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif"
+        android:text="&quot;Some Item&quot;"
         android:textColor="#B5000000"
         android:textSize="24sp"></TextView>
 
-
-    <ImageButton
-        android:id="@+id/edit"
-        android:layout_width="40dp"
+    <androidx.cardview.widget.CardView
+        android:id="@+id/countryspinner"
+        android:layout_width="200dp"
         android:layout_height="40dp"
-        android:layout_marginTop="15dp"
-        android:background="@drawable/edit_profile"
-        android:layout_alignParentRight="true">
-
-    </ImageButton>
-
-
-    <View
-        android:id="@+id/profilerect"
-        android:layout_below="@id/profiletxt"
-        android:layout_width="match_parent"
         android:layout_marginTop="20dp"
-        android:layout_height="150dp"
-        android:foreground="#E7E7E7">
-    </View>
+        android:layout_below="@id/border4"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:alpha="0.5"
+        app:cardCornerRadius="10dp"
+        android:paddingLeft="15dp">
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </Spinner>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Best Match"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            ></TextView>
+    </androidx.cardview.widget.CardView>
 
-    <ImageView
-        android:id="@+id/profilepic"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/profiletxt"
-        android:layout_marginTop="130dp"
-        android:layout_marginLeft="20dp"
-        android:backgroundTint="@color/black"
-        android:background="@drawable/circle">
-
-    </ImageView>
-
-
-    <TextView
-        android:id="@+id/name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text=" Daud"
-        android:layout_marginLeft="20dp"
-        android:layout_below="@id/profilepic"
-        android:layout_marginTop="10dp"
-        android:textStyle="bold"
-        android:textColor="#000000"
-        android:textSize="24sp"
-        ></TextView>
-
-    <ImageView
-        android:id="@+id/location_icon"
-        android:layout_width="25dp"
-        android:layout_height="25dp"
-        android:layout_below="@id/name"
-        android:layout_marginLeft="25dp"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/location">
-
-    </ImageView>
-
-    <TextView
-        android:id="@+id/city"
-        android:layout_toRightOf="@id/location_icon"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Islamabad"
-        android:alpha="0.6"
-        android:layout_below="@id/name"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="12dp"
-        android:fontFamily="sans-serif"
-        android:textSize="15sp">
-    </TextView>
-
-    <TextView
-        android:id="@+id/noitemp"
-        android:layout_toRightOf="@id/city"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="18 items posted"
-        android:alpha="0.6"
-        android:layout_below="@id/name"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="12dp"
-        android:fontFamily="sans-serif"
-        android:textSize="15sp">
-    </TextView>
-
-    <TextView
-        android:id="@+id/noitemr"
-        android:layout_toRightOf="@id/noitemp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="24 items rented"
-        android:alpha="0.6"
-        android:layout_below="@id/name"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="12dp"
-        android:fontFamily="sans-serif"
-        android:textSize="15sp">
-    </TextView>
 
     <ScrollView
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="100dp"
         android:layout_width="match_parent"
         android:layout_height="700dp"
         android:layout_marginBottom="120dp"
-        android:layout_below="@id/noitemr">
+        android:layout_below="@id/searchtxt">
+
+
 
         <RelativeLayout
             android:id="@+id/r1"
@@ -132,62 +95,10 @@
                 android:id="@+id/border"
                 android:layout_width="match_parent"
                 android:layout_height="0dp" />
-            <View
-                android:id="@+id/border2"
-                android:layout_width="match_parent"
-                android:layout_marginTop="300dp"
-                android:layout_height="0dp" />
 
-            <View
-                android:id="@+id/border3"
-                android:layout_width="match_parent"
-                android:layout_marginTop="600dp"
-                android:layout_height="0dp" />
-
-
-            <TextView
-                android:id="@+id/itemtype1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+            <HorizontalScrollView
+                android:layout_marginTop="0dp"
                 android:layout_below="@id/border"
-                android:layout_marginLeft="20dp"
-                android:text="Items You’ve Rented"
-                android:textColor="@color/black"
-                android:fontFamily="sans-serif"
-                android:textStyle="bold"
-                android:textSize="24sp">
-            </TextView>>
-
-
-            <TextView
-                android:id="@+id/itemtype2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/border2"
-                android:layout_marginLeft="20dp"
-                android:text="Your Items"
-                android:textColor="@color/black"
-                android:fontFamily="sans-serif"
-                android:textStyle="bold"
-                android:textSize="24sp">
-            </TextView>
-
-
-
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/border2"
-                android:layout_marginLeft="300dp"
-                android:text="View All"
-                android:textColor="#EE8205"
-                android:fontFamily="sans-serif"
-                android:textSize="22sp">
-            </TextView>
-
-            <HorizontalScrollView
-                android:layout_below="@id/itemtype1"
                 android:layout_width="match_parent"
                 android:scrollbars="none"
                 android:layout_height="250dp">
@@ -274,6 +185,7 @@
                         app:cardCornerRadius="8dp"
                         android:background="@drawable/square"
                         android:layout_height="230dp"
+                        android:layout_marginRight="20dp"
                         android:layout_marginLeft="300dp"
                         android:layout_marginTop="10dp">
                         <View
@@ -343,89 +255,13 @@
                     </androidx.cardview.widget.CardView>
 
 
-
-                    <androidx.cardview.widget.CardView
-                        android:layout_width="250dp"
-                        app:cardCornerRadius="8dp"
-                        android:background="@drawable/square"
-                        android:layout_height="230dp"
-                        android:layout_marginLeft="580dp"
-                        android:layout_marginRight="20dp"
-                        android:layout_marginTop="10dp">
-                        <View
-                            android:layout_width="match_parent"
-                            android:layout_height="150dp"
-                            android:foreground="#E7E7E7">
-                        </View>
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="150dp"
-                            android:layout_marginLeft="10dp"
-                            android:alpha="0.8"
-                            android:text="Item Name"
-                            android:textColor="@color/black"
-                            android:fontFamily="sans-serif"
-                            android:textStyle="bold"
-                            android:textSize="20sp">
-
-                        </TextView>
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="150dp"
-                            android:layout_marginLeft="180dp"
-                            android:alpha="0.8"
-                            android:text="10$/hr"
-                            android:textColor="#EE8205"
-                            android:fontFamily="sans-serif"
-                            android:textStyle="bold"
-                            android:textSize="20sp">
-
-                        </TextView>
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:alpha="0.6"
-                            android:text="Islamabad"
-                            android:layout_marginLeft="40dp"
-                            android:layout_marginTop="192dp"
-                            android:fontFamily="sans-serif"
-                            android:textSize="20sp">
-                        </TextView>
-
-                        <ImageView
-                            android:layout_width="20dp"
-                            android:layout_height="20dp"
-                            android:layout_marginTop="195dp"
-                            android:layout_marginLeft="10dp"
-                            android:background="@drawable/location">
-                        </ImageView>
-
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:alpha="0.6"
-                            android:text="7th Mar"
-                            android:layout_marginLeft="180dp"
-                            android:layout_marginTop="195dp"
-                            android:fontFamily="sans-serif"
-                            android:textSize="18sp">
-                        </TextView>
-
-                    </androidx.cardview.widget.CardView>
-
                 </RelativeLayout>
 
 
             </HorizontalScrollView>
-
-
             <HorizontalScrollView
-                android:layout_below="@id/itemtype2"
+                android:layout_marginTop="250dp"
+                android:layout_below="@id/border"
                 android:layout_width="match_parent"
                 android:scrollbars="none"
                 android:layout_height="250dp">
@@ -478,7 +314,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:alpha="0.6"
-                            android:text="395"
+                            android:text="Islamabad"
                             android:layout_marginLeft="40dp"
                             android:layout_marginTop="192dp"
                             android:fontFamily="sans-serif"
@@ -486,11 +322,11 @@
                         </TextView>
 
                         <ImageView
-                            android:layout_width="30dp"
-                            android:layout_height="30dp"
-                            android:layout_marginTop="192dp"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginTop="195dp"
                             android:layout_marginLeft="10dp"
-                            android:background="@drawable/eye">
+                            android:background="@drawable/location">
                         </ImageView>
 
 
@@ -512,6 +348,7 @@
                         app:cardCornerRadius="8dp"
                         android:background="@drawable/square"
                         android:layout_height="230dp"
+                        android:layout_marginRight="20dp"
                         android:layout_marginLeft="300dp"
                         android:layout_marginTop="10dp">
                         <View
@@ -551,7 +388,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:alpha="0.6"
-                            android:text="395"
+                            android:text="Islamabad"
                             android:layout_marginLeft="40dp"
                             android:layout_marginTop="192dp"
                             android:fontFamily="sans-serif"
@@ -559,11 +396,11 @@
                         </TextView>
 
                         <ImageView
-                            android:layout_width="30dp"
-                            android:layout_height="30dp"
-                            android:layout_marginTop="192dp"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginTop="195dp"
                             android:layout_marginLeft="10dp"
-                            android:background="@drawable/eye">
+                            android:background="@drawable/location">
                         </ImageView>
 
 
@@ -581,14 +418,27 @@
                     </androidx.cardview.widget.CardView>
 
 
+                </RelativeLayout>
+
+
+            </HorizontalScrollView>
+            <HorizontalScrollView
+                android:layout_marginTop="500dp"
+                android:layout_below="@id/border"
+                android:layout_width="match_parent"
+                android:scrollbars="none"
+                android:layout_height="250dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
 
                     <androidx.cardview.widget.CardView
                         android:layout_width="250dp"
                         app:cardCornerRadius="8dp"
                         android:background="@drawable/square"
                         android:layout_height="230dp"
-                        android:layout_marginLeft="580dp"
-                        android:layout_marginRight="20dp"
+                        android:layout_marginLeft="20dp"
                         android:layout_marginTop="10dp">
                         <View
                             android:layout_width="match_parent"
@@ -627,7 +477,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:alpha="0.6"
-                            android:text="395"
+                            android:text="Islamabad"
                             android:layout_marginLeft="40dp"
                             android:layout_marginTop="192dp"
                             android:fontFamily="sans-serif"
@@ -635,11 +485,11 @@
                         </TextView>
 
                         <ImageView
-                            android:layout_width="30dp"
-                            android:layout_height="30dp"
-                            android:layout_marginTop="192dp"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginTop="195dp"
                             android:layout_marginLeft="10dp"
-                            android:background="@drawable/eye">
+                            android:background="@drawable/location">
                         </ImageView>
 
 
@@ -656,12 +506,89 @@
 
                     </androidx.cardview.widget.CardView>
 
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="250dp"
+                        app:cardCornerRadius="8dp"
+                        android:background="@drawable/square"
+                        android:layout_height="230dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginLeft="300dp"
+                        android:layout_marginTop="10dp">
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:foreground="#E7E7E7">
+                        </View>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="150dp"
+                            android:layout_marginLeft="10dp"
+                            android:alpha="0.8"
+                            android:text="Item Name"
+                            android:textColor="@color/black"
+                            android:fontFamily="sans-serif"
+                            android:textStyle="bold"
+                            android:textSize="20sp">
+
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="150dp"
+                            android:layout_marginLeft="180dp"
+                            android:alpha="0.8"
+                            android:text="10$/hr"
+                            android:textColor="#EE8205"
+                            android:fontFamily="sans-serif"
+                            android:textStyle="bold"
+                            android:textSize="20sp">
+
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:alpha="0.6"
+                            android:text="Islamabad"
+                            android:layout_marginLeft="40dp"
+                            android:layout_marginTop="192dp"
+                            android:fontFamily="sans-serif"
+                            android:textSize="20sp">
+                        </TextView>
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginTop="195dp"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/location">
+                        </ImageView>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:alpha="0.6"
+                            android:text="7th Mar"
+                            android:layout_marginLeft="180dp"
+                            android:layout_marginTop="195dp"
+                            android:fontFamily="sans-serif"
+                            android:textSize="18sp">
+                        </TextView>
+
+                    </androidx.cardview.widget.CardView>
+
+
                 </RelativeLayout>
 
 
             </HorizontalScrollView>
+
 
         </RelativeLayout>
+
 
 
 
@@ -695,7 +622,7 @@
         android:layout_marginTop="28dp"
         android:layout_marginRight="10dp"
         android:layout_toLeftOf="@id/add_btn"
-        android:background="@drawable/search_btn"></ImageButton>
+        android:background="@drawable/search_ebtn"></ImageButton>
 
     <ImageButton
         android:id="@+id/add_btn"
@@ -725,9 +652,11 @@
         android:layout_width="65dp"
         android:layout_height="68dp"
         android:layout_alignTop="@id/line"
-        android:layout_marginTop="38dp"
+        android:layout_marginTop="28dp"
         android:layout_marginLeft="80dp"
         android:layout_toRightOf="@id/add_btn"
-        android:background="@drawable/profile_ebtn">
+        android:background="@drawable/profile_btn">
+
     </ImageButton>
+
 </RelativeLayout>
